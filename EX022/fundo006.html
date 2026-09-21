@@ -7,16 +7,22 @@
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url(imagens-cap19/imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover ;
-            /*valores como: contain e cover são mais utilizados para definir uma imagem de fundo de forma completa sem perder a qualidade fazendo um crop ou apresentando o tamanho real da imagem */
+                    background-size: cover ; valores como: contain e cover são mais utilizados para definir uma imagem de fundo de forma completa sem perder a qualidade fazendo um crop ou apresentando o tamanho real da imagem
+            background-attachment: fixed;
+                    mantem o background fixado (fixed) ou rolavel (scroll) junto com o scroll do mouse */
+            
+            background: black url(imagens-cap19/imagens/wallpaper002.jpg) center center no-repeat fixed;
+            /*shorthands background: primeiro color > image > position > atteachment*/
+            background-size: cover;
+
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 2px solid;
